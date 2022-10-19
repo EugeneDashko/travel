@@ -1,0 +1,67 @@
+.intro {
+    min-height: 100vh; // 100% высоты экрана
+    background: url('@img/intro-bg.jpeg') no-repeat center;
+    background-size: cover; // покрываем весь блок при любых его размерах
+    padding-top: 263px;
+}
+
+.intro__title {
+    max-width: 619px; // ширина блока
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 60px;
+    color: #FFFFFF;
+    margin-bottom: 22px;
+}
+.intro__subtitle {
+    max-width: 546px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-bottom: 59px;
+}
+
+.search-form__info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.search-form__field {
+    width: 297px;
+    background: transparent url('@img/icons/icons.svg#circle-icon-search') no-repeat left 6px;
+    background-size: 30px;
+    border: 0; // убираю границы инпутов
+    margin-right: 60px;
+    border-bottom: 2px solid #BFC0C5;
+    padding-left: 63px;
+    padding-bottom: 22px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFFFFF;
+
+    &::placeholder { //изменяем цыет текста подсказки
+        color: #FFFFFF;
+    }
+
+}
+
+.search-form__submit {
+    padding: 15px 39px;
+    text-transform: uppercase;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    background: #1B7DFF;
+    color:#FFFFFF;
+    border:0;
+
+        &:hover, &:active, &:focus {
+            background: #0054c3;
+            transition-property: background-color;
+            transition-duration: 500ms;
+
+        }
+}

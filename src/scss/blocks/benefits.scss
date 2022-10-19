@@ -1,0 +1,72 @@
+.benefits {
+    margin-bottom: 137px;
+}
+
+.benefits__wrapper {
+    max-width: 1262px;
+    background-color: #fff;
+    margin: 0 auto;
+    box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
+    position: relative;
+}
+
+.benefits__title {
+    width: 100%;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 42px;
+    padding: 93px 100px 88px 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    // сдвигаем тайтл вверх на свою ширину
+    transform: translateY(-100%);
+    background: #fff;
+}
+
+.benefits__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); // 3 колонки
+    grid-column-gap: 55px; // отступы между колонками
+    padding: 0 100px;
+}
+.svg-chirch-icon-dims, .svg-person-icon-dims, .svg-market-icon-dims {
+    max-width: 66px;
+    margin-bottom: 37px;
+}
+.benefits__card {
+    grid-column: 1 span; // задаем ширину колонкам
+    margin-bottom: 105px;
+}
+
+.benefits__card-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 26px;
+}
+
+.benefits__card-description {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 39px;
+}
+
+.benefits__card-more {
+    height: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #006DFE;
+    text-decoration: none;
+    // делаю стрелку как фон (33+29 = 59px)
+    display: inline-block;
+    padding-right: 59px;
+    background: url('@img/icons/icons.svg#arrow-right-icon') no-repeat 95% 3px;
+
+        &:hover, &:focus {
+            background: url('@img/icons/icons.svg#arrow-right-icon') no-repeat right 3px; // 95% и right чтобы она двигалась при наведении
+            transition: .3s all; // скорочть движения срелки
+        }
+
+}

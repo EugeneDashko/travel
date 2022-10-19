@@ -1,0 +1,44 @@
+.header {
+    // фикскируем шапку пр кроллинге
+    position: fixed;// и выбивается из оннсоного потока и не знимает простаранства
+    top: 0;
+    left: 0;
+    width: 100%;
+
+}
+.svg-odigo-Logo-dims {
+    width: 82px;
+}
+
+
+.header__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; // вертикалльное выравнивание элементов flex.  по низ
+    justify-content: space-between; // разносим по краям элементы
+    padding-top: 56px;
+}
+
+.header__list { // натраиваем меню
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.header__item {
+    margin-right: 82px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.header__link {
+    font-size: 18px;
+    line-height: 24px;
+    color: white;
+    text-decoration: none;
+    
+        &:hover, &:focus, &:active { // делаем эффект наведения
+            opacity: .75;
+
+        }
+}
