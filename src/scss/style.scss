@@ -380,6 +380,8 @@ textarea {
 @import "blocks/intro";
 @import "blocks/benefits";
 @import "blocks/places";
+@import "blocks/tour";
+
 
 .wrapper { // нужен для ограничения ширины и выравнивания контента
     max-width: 1060px; // блок для контента

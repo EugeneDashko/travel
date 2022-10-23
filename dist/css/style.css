@@ -661,6 +661,16 @@ textarea {
   grid-column: span 2;
 }
 
+.tours {
+  margin-bottom: 139px;
+}
+
+.tours__tour {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: o 108px;
+}
+
 .wrapper {
   max-width: 1060px;
   margin: 0 auto;
