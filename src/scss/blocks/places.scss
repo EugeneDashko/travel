@@ -1,3 +1,6 @@
+.places {
+    margin-bottom: 131px;
+}
 .wrapper-full {
     max-width: 1262px;
     margin: 0 auto;
@@ -17,4 +20,98 @@
             background-color: #006DFE;
             margin-top: 10px;
         }
+}
+
+.places__caption {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 46px;
+}
+
+.places__view-all {
+    padding-right: 59px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #006DFE;
+    background: url('@img/icons/icons.svg#arrow-right-icon') no-repeat right 3px;
+
+        &:hover, &:focus {
+            opacity: .65 ;
+        }
+}
+
+.places__title {
+    margin-right: 20px;
+}
+.places__cards  {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); // делаю 6 колонок
+    grid-gap: 10px; // отступы между колонками с 4-х сторон 
+}
+// делаю затемнение картинок
+.places__card {
+    position: relative;
+    overflow: hidden; // сделано для hover. Отображается только область внутри элемента, остальное будет скрыто.
+
+    &::after {
+        display: block;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: rgba(21, 24, 36, 0.4);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+    // стилизация при наведении
+    &:hover .places__card-pic {
+        transform: scale(1.05) ;
+    }
+}
+.places__card_size_lg {
+    grid-column: span 3;
+}
+
+.places__card-pic {
+    width: 100%;
+    transition: .15s all;
+}
+
+.places__card_size_lg {
+    height: 354px;
+    object-fit: cover ; // указвает как будет машстабироваться картинка внутри контейнера
+}
+.places__card_size_small {
+    object-fit: cover ;
+    height: 283px;
+}
+
+.places__card-title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;  
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 27px;
+    left: 29px;
+    z-index: 3;
+}
+
+//делаю изображение ссылкой и поднимаю его на самый верх над изображением
+.places__card-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+}
+
+.places__card_size_small {
+    grid-column: span 2;
 }
