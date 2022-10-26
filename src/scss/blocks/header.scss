@@ -4,19 +4,26 @@
     top: 0;
     left: 0;
     width: 100%;
+    transition: .2s leaner;
+    padding-bottom: 20px;
+    z-index: 999; // чтобы при скроллинге не прятался на странице за секциями
 
 }
 .svg-odigo-Logo-dims {
     width: 82px;
 }
 
+// bg для js
+.header_active {
+    background: #0E1D28;
+}
 
 .header__wrapper {
     display: flex;
     flex-wrap: wrap;
     align-items: center; // вертикалльное выравнивание элементов flex.  по низ
     justify-content: space-between; // разносим по краям элементы
-    padding-top: 56px;
+    padding-top: 30px;
 }
 
 .header__list { // натраиваем меню

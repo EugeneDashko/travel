@@ -1,0 +1,22 @@
+.video{
+    width: 100%;
+}
+
+.video__wrapper {
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+.video__item {
+    padding-top: 56.25%;// пропорция размера экрана 16:9, где 16/100=9/х
+}
+
+.video__element {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}

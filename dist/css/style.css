@@ -371,10 +371,17 @@ textarea {
   top: 0;
   left: 0;
   width: 100%;
+  transition: 0.2s leaner;
+  padding-bottom: 20px;
+  z-index: 999;
 }
 
 .svg-odigo-Logo-dims {
   width: 82px;
+}
+
+.header_active {
+  background: #0E1D28;
 }
 
 .header__wrapper {
@@ -382,7 +389,7 @@ textarea {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding-top: 56px;
+  padding-top: 30px;
 }
 
 .header__list {
@@ -799,6 +806,28 @@ textarea {
   background: #0054c3;
   transition-property: background-color;
   transition-duration: 500ms;
+}
+
+.video {
+  width: 100%;
+}
+
+.video__wrapper {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.video__item {
+  padding-top: 56.25%;
+}
+
+.video__element {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .wrapper {
