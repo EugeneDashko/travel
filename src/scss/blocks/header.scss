@@ -49,3 +49,33 @@
 
         }
 }
+
+
+.header__burger {
+     display: none;
+     width: 40px;
+     height: 28px;
+     position: relative;
+}
+
+.burger__line {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+}
+
+.burger__line_first {
+    top: 0;
+}
+
+.burger__line_second {
+    // располагаю элемент по центру
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.burger__line_third {
+    bottom: 0;
+}
