@@ -1,0 +1,55 @@
+@media screen and (max-width: 767px) {
+    .header__burger {
+        display: block; // открываю бургер
+    }
+    .header__nav {
+        position: fixed; // выравниваем элементы относительно экрана
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #000;
+        z-index: 10;
+        padding: 75px;
+        transform: translateX(100%); // прячу хедер при вьюпорте меньше 768 px
+    }
+
+    .header__item {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+            &:last-child {
+                margin-bottom: 0px;
+            }
+    }
+
+    .header__link {
+        font-size: 42px;
+        line-height: 48px;
+    }
+
+    .header__nav-close {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 11;
+    }
+    //  делаю крестик
+    .header__nav-close-line {
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: 50%;
+        
+            &:first-child {
+                transform: translateY(-50%) rotate(45deg);// чтобы были по центру
+            }
+            &:last-child {
+                transform: translateY(-50%) rotate(-45deg);// чтобы были по центру
+            }
+    }
+}
