@@ -36,6 +36,6 @@ export const path = {
     buildFolder: buildFolder,
     srcFolder: srcFolder,
     rootFolder: rootFolder,
-    ftp: `` //где мы сможем указвапть папку на удаленном ftp сервере
+    // ftp: `` //где мы сможем указвапть папку на удаленном ftp сервере
 
 }
