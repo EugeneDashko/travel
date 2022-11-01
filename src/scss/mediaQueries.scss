@@ -12,6 +12,7 @@
         z-index: 10;
         padding: 75px;
         transform: translateX(100%); // прячу хедер при вьюпорте меньше 768 px
+        transition: .2s all linear;
     }
 
 .header__nav-active {

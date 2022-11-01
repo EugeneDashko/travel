@@ -20,5 +20,13 @@ const swiper = new Swiper();
 
 (function () {
     const burgerItem = document.querySelector('.burger');
-    console.log(burgerItem);
+    const menu = document.querySelector('.header__nav');
+    const menuCloseItem = document.querySelector('.header__nav-close')
+    //вешаю обрботчик событий
+    burgerItem.addEventListener('click', () => {
+        menu.classList.add("header__nav-active");
+    })
+    menuCloseItem.addEventListener('click', () => {
+        menu.classList.remove("header__nav-active");
+    })
 }());
