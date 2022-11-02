@@ -563,6 +563,11 @@ textarea {
   margin-bottom: 39px;
 }
 
+.svg-arrow-right-icon-dims {
+  width: 33px;
+  height: 8px;
+}
+
 .benefits__card-more {
   height: 24px;
   font-weight: 400;
@@ -571,11 +576,11 @@ textarea {
   color: #006DFE;
   text-decoration: none;
   display: inline-block;
-  padding-right: 59px;
-  background: url("../img/icons/icons.svg#arrow-right-icon") no-repeat 95% 3px;
+  padding-right: 75px;
+  background: url("../img/icons/icons.svg#arrow-right-icon") no-repeat 95% 6px;
 }
 .benefits__card-more:hover, .benefits__card-more:focus {
-  background: url("../img/icons/icons.svg#arrow-right-icon") no-repeat right 3px;
+  background: url("../img/icons/icons.svg#arrow-right-icon") no-repeat right 6px;
   transition: 0.3s all;
 }
 
@@ -583,7 +588,7 @@ textarea {
   margin-bottom: 131px;
 }
 
-.wrapper-full {
+.places__wrapper-full {
   max-width: 1262px;
   margin: 0 auto;
   padding: 0 15px;
@@ -613,13 +618,13 @@ textarea {
 }
 
 .places__view-all {
-  padding-right: 59px;
+  padding-right: 75px;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   text-decoration: none;
   color: #006DFE;
-  background: url("../img/icons/icons.svg#arrow-right-icon") no-repeat right 3px;
+  background: url("../img/icons/icons.svg#arrow-right-icon") no-repeat 95% 8px;
 }
 .places__view-all:hover, .places__view-all:focus {
   opacity: 0.65;
@@ -661,17 +666,16 @@ textarea {
 
 .places__card-pic {
   width: 100%;
+  height: 100%;
   transition: 0.15s all;
 }
 
 .places__card_size_lg {
-  height: 354px;
   object-fit: cover;
 }
 
 .places__card_size_small {
   object-fit: cover;
-  height: 283px;
 }
 
 .places__card-title {

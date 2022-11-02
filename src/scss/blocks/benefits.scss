@@ -52,6 +52,8 @@
     margin-bottom: 39px;
 }
 
+.svg-arrow-right-icon-dims { width: 33px; height: 8px; }
+
 .benefits__card-more {
     height: 24px;
     font-weight: 400;
@@ -59,13 +61,15 @@
     line-height: 24px;
     color: #006DFE;
     text-decoration: none;
-    // делаю стрелку как фон (33+29 = 59px)
+    // делаю стрелку как фон (33+26 = 59px)
     display: inline-block;
-    padding-right: 59px;
-    background: url('@img/icons/icons.svg#arrow-right-icon') no-repeat 95% 3px;
+    padding-right: 75px;
+    background: url('@img/icons/icons.svg#arrow-right-icon') no-repeat 95% 6px;
+    // background-size: 100%;
+
 
         &:hover, &:focus {
-            background: url('@img/icons/icons.svg#arrow-right-icon') no-repeat right 3px; // 95% и right чтобы она двигалась при наведении
+            background: url('@img/icons/icons.svg#arrow-right-icon') no-repeat right 6px; // 95% и right чтобы она двигалась при наведении
             transition: .3s all; // скорочть движения срелки
         }
 
