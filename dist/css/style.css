@@ -1022,6 +1022,36 @@ textarea {
   .header__nav-close-line:last-child {
     transform: translateY(-50%) rotate(-45deg);
   }
+  .benefits__card {
+    grid-column: span 3;
+  }
+  .search-form__field {
+    margin-right: 0;
+    width: 100%;
+  }
+  .intro {
+    padding-top: 150px;
+  }
+  .intro__title {
+    font-size: 32px;
+    line-height: 48px;
+  }
+  .intro__subtitle {
+    font-size: 14px;
+  }
+  .search-form__field {
+    font-size: 14px;
+    border-bottom: 1px solid #bfc0c5;
+  }
+  .search-form__submit {
+    padding: 7px 20px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .header__nav {
+    padding-left: 25px;
+  }
 }
 .wrapper {
   max-width: 1060px;
