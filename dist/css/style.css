@@ -476,7 +476,7 @@ textarea {
 .search-form__field {
   width: 297px;
   background: transparent url("../img/icons/icons.svg#circle-icon-search") no-repeat left 6px;
-  background-size: 30px;
+  background-size: 40px;
   border: 0;
   margin-right: 60px;
   border-bottom: 2px solid #BFC0C5;
@@ -588,7 +588,7 @@ textarea {
   margin-bottom: 131px;
 }
 
-.places__wrapper-full {
+.wrapper-full {
   max-width: 1262px;
   margin: 0 auto;
   padding: 0 15px;
@@ -908,6 +908,18 @@ textarea {
   transition: 0.2s;
 }
 
+@media screen and (max-width: 960px) {
+  .search-form__field {
+    margin-bottom: 30px;
+  }
+  .benefits__cards {
+    padding: 0 15px;
+    grid-column-gap: 25px;
+  }
+  .benefits__title {
+    padding: 45px 25px;
+  }
+}
 @media screen and (max-width: 767px) {
   .header__burger {
     display: block;
