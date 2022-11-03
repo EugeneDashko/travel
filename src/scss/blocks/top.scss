@@ -8,8 +8,9 @@
 
 .top__cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 57px 57px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 57px;
+    grid-row-gap: 57px;
 }
 
 .top__card-pic {
@@ -18,9 +19,11 @@ margin-bottom: 45px;
 }
 
 // если текста описания будет больше чтобы он не смещал вниз мою карточку
-.top_card {
+.top__card {
     display: flex;
     flex-direction: column;
+    grid-column: span 2;
+
 }
 
 .top__card-stats {
