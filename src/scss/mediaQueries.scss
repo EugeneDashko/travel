@@ -211,5 +211,28 @@
     .tour__pic {
         margin-bottom: 15px;
     }
-}
+    .tour__pic_mob-first {
+        grid-row-start: -1;
+    }
+    .tours {
+        margin-bottom: 70px;
+    }
+    .top__card {
+        grid-column: span 6;
+    }
+    .top {
+        margin-bottom: 70px;
+    }
+    .footer__logo {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .footer__nav {
+        width: 100%;
+    }
+    .footer__menu {
+        width: 50%;
+        margin-bottom: 30px;
+    }
 
+}
