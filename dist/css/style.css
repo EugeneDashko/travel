@@ -1047,10 +1047,50 @@ textarea {
     padding: 7px 20px;
     font-size: 16px;
   }
+  .section__full-title:after {
+    width: 80px;
+  }
 }
 @media screen and (max-width: 500px) {
   .header__nav {
     padding-left: 25px;
+  }
+  .svg-chirch-icon-dims {
+    margin-bottom: 15px;
+  }
+  .benefits__card-title {
+    margin-bottom: 13px;
+  }
+  .benefits__card-description {
+    margin-bottom: 20px;
+  }
+  .benefits__card {
+    margin-bottom: 40px;
+  }
+  .search-form__field {
+    padding-bottom: 16px;
+    background: transparent url(../img/icons/icons.svg#circle-icon-search) no-repeat left 0px;
+    background-size: 50px;
+  }
+  .search-form__submit {
+    width: 100%;
+    padding: 14px 0;
+    font-size: 24px;
+  }
+  .places__title {
+    margin-bottom: 20px;
+  }
+  .places__card-title {
+    font-size: 30px;
+  }
+  .places {
+    margin-bottom: 70px;
+  }
+  .tour__pic, .tour__info {
+    grid-column: span 2;
+  }
+  .tour__pic {
+    margin-bottom: 15px;
   }
 }
 .wrapper {
