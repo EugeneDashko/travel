@@ -5,7 +5,7 @@ import rename from 'gulp-rename';
 import cleanCss from 'gulp-clean-css'; // сжатие CSS файла
 import webpcss from 'gulp-webpcss'; // вывод WEBP изображений
 import autoprefixer from 'gulp-autoprefixer'; // Добавление вендорных префиксов
-import groupCssediaQueries from 'gulp-group-css-media-queries'; // группировка Медиазапросов
+import groupCssMediaQueries from 'gulp-group-css-media-queries'; // группировка Медиазапросов
 
 
 const sass = gulpSass(dartSass);
@@ -24,7 +24,7 @@ export const scss = () => {
     .pipe(
         app.plugins.if(
             app.isBuild,
-            groupCssediaQueries()
+            groupCssMediaQueries()
         )
     )
     .pipe(
@@ -42,13 +42,13 @@ export const scss = () => {
             app.isBuild,
             webpcss(
                 {
-                    webpClass: "wepb",
+                    webpClass: ".webp",
                     noWebpClass: ".no-webp"
                 }
             )
         )
     )
-    .pipe(app.plugins.replace(/@img\//g, '../img/')) // обаботка алиасов
+    .pipe(app.plugins.replace(/@img\//g, '../img/')) // обаботка алиасов ( меням @img на нормальную .../img/)
     .pipe(app.gulp.dest(app.path.build.css)) // выгружаем не сжатый фал стилей
     .pipe(
         app.plugins.if(

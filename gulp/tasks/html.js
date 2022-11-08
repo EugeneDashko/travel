@@ -25,16 +25,16 @@ export const html = () => {
                  versionNumber({
                         'value': '%DT%',
                         'append': {
-                        'key': '_V',
-                        'cover': 0,
-                        'to': [
-                            'css',
-                            'js',
-                            ]
-                        },
-                        'output': {
-                            'file': 'gulp/version.json'
-                        }
+                            'key': '_V',
+                            'cover': 0,
+                            'to': [
+                                'css',
+                                'js',
+                                ]
+                            },
+                            'output': {
+                                'file': 'gulp/version.json'
+                            }
                     })
                 )
         )

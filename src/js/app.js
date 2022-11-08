@@ -1,9 +1,9 @@
 import * as flsFunction from "./modules/functions.js"
 
-flsFunction.isWepb();
+flsFunction.isWebp();
 // далее подключаем модули, например ниже слайдер подключен
-import Swiper, { Navigation, Pagination } from 'swiper';
-const swiper = new Swiper();
+// import Swiper, { Navigation, Pagination } from 'swiper';
+// const swiper = new Swiper();
 
 (function () {
     const header = document.querySelector('.header');
