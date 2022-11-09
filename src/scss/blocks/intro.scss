@@ -1,9 +1,8 @@
 .intro {
     min-height: 100vh; // 100% высоты экрана
-    background: url('@img/intro-bg.jpeg');
+    background-image: url('@img/intro-bg.jpeg'); // для npm run build  для background каждое свойство надо расписывать одельно как здесь
     background-repeat: no-repeat;
     background-position: left;
-    background-size:cover;
     background-size: cover; // покрываем весь блок при любых его размерах
     padding-top: 263px;
     padding-bottom: 223px;
