@@ -9,8 +9,8 @@
 .top__cards {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-column-gap: 57px;
-    grid-row-gap: 57px;
+    column-gap: 57px;
+    row-gap: 57px;
 }
 
 .top__card-pic {
@@ -53,9 +53,8 @@ margin-bottom: 45px;
     line-height: 24px;
     color: #FFFFFF;
     padding-right: 20px;
-    background: url('@img/icons/icons.svg#heart-ico') no-repeat right;
+    background: url('@img/icons/icons.svg#heart-ico') no-repeat center right;
     // размер иконки
-    background-size: 16px;
     margin-right: 14px;
 }
 .top__card-comments {

@@ -27,7 +27,7 @@
 .benefits__cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr); // 3 колонки
-    grid-column-gap: 55px; // отступы между колонками
+    column-gap: 55px; // отступы между колонками
     padding: 0 100px;
 }
 .svg-chirch-icon-dims, .svg-person-icon-dims, .svg-market-icon-dims {

@@ -21,14 +21,23 @@ flsFunction.isWebp();
 (function () {
     const burgerItem = document.querySelector('.burger');
     const menu = document.querySelector('.header__nav');
-    const menuCloseItem = document.querySelector('.header__nav-close')
+    const menuCloseItem = document.querySelector('.header__nav-close');
+    const menuLinks = document.querySelectorAll('.header__link');
+    console.log(menuLinks);
     //вешаю обрботчик событий
     burgerItem.addEventListener('click', () => {
         menu.classList.add("header__nav-active");
     })
     menuCloseItem.addEventListener('click', () => {
         menu.classList.remove("header__nav-active");
-    })
+    });
+    if(window.innerWidth <= 767) { //измеряем ширину экрана и если меньше 767 выполняем блок кода
+        for(let i =0; i < menuLinks.length; i++) {
+            menuLinks[i].addEventListener('click', () => {
+                menu.classList.remove("header__nav-active");
+            })
+        }
+    }
 }());
 
 

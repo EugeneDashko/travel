@@ -53,8 +53,8 @@
 .places__cards  {
     display: grid;
     grid-template-columns: repeat(6, 1fr); // делаю 6 колонок
-    grid-row-gap: 10px; // отступы между колонками с 4-х сторон 
-    grid-column-gap: 10px;
+    row-gap: 10px; // отступы между колонками с 4-х сторон 
+    column-gap: 10px;
 }
 // делаю затемнение картинок
 .places__card {
