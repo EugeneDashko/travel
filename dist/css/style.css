@@ -444,10 +444,9 @@ textarea {
 
 .intro {
   min-height: 100vh;
-  background: url("../img/intro-bg.jpeg");
+  background-image: url("../img/intro-bg.jpeg");
   background-repeat: no-repeat;
   background-position: left;
-  background-size: cover;
   background-size: cover;
   padding-top: 263px;
   padding-bottom: 223px;
@@ -544,7 +543,7 @@ textarea {
 }
 
 .svg-chirch-icon-dims, .svg-person-icon-dims, .svg-market-icon-dims {
-  max-width: 66px;
+  max-width: 76px;
   margin-bottom: 37px;
 }
 
