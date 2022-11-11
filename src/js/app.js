@@ -23,7 +23,6 @@ flsFunction.isWebp();
     const menu = document.querySelector('.header__nav');
     const menuCloseItem = document.querySelector('.header__nav-close');
     const menuLinks = document.querySelectorAll('.header__link');
-    console.log(menuLinks);
     //вешаю обрботчик событий
     burgerItem.addEventListener('click', () => {
         menu.classList.add("header__nav-active");
